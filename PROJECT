@@ -1,0 +1,15 @@
+domain: github.com/chinmayrelkar
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: aws-Nlb-controller
+repo: github.com/chinmayrelkar/aws-nlb-controller
+resources:
+- controller: true
+  group: core
+  kind: Service
+  path: k8s.io/api/core/v1
+  version: v1
+version: "3"
